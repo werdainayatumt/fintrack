@@ -1,0 +1,6 @@
+fintrack.db
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/
+.DS_Store

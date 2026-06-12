@@ -1,0 +1,7 @@
+# FinTrack uses only the Python standard library (tkinter + sqlite3).
+# No third-party packages are required.
+#
+# Requirements:
+#   - Python 3.8 or newer
+#   - Tkinter (bundled with Python on Windows/macOS; on Debian/Ubuntu
+#     install with: sudo apt install python3-tk)
