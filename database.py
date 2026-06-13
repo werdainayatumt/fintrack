@@ -110,6 +110,17 @@ class Database:
         self.conn.execute("DELETE FROM transactions WHERE id = ?", (tx_id,))
         self.conn.commit()
 
+    def get_transaction(self, tx_id):
+        return self.conn.execute(
+            """
+            SELECT t.*, c.name AS category_name, c.color AS category_color
+            FROM transactions t
+            LEFT JOIN categories c ON t.category_id = c.id
+            WHERE t.id = ?
+            """,
+            (tx_id,),
+        ).fetchone()
+
     def get_transactions(self, month=None, type_=None, category_id=None):
         q = """
             SELECT t.*, c.name AS category_name, c.color AS category_color
