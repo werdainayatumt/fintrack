@@ -80,6 +80,8 @@ class ReportsScreen(ttk.Frame):
         for c in cats:
             self.tree.insert("", "end", values=(
                 c["name"], f"{c['total']:,.2f}", f"{c['total'] / total * 100:.1f}%"))
+        if not cats:
+            self.tree.insert("", "end", values=("No expenses recorded.", "—", "—"))
 
     def _export(self):
         month = self.app.current_month.get()
