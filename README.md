@@ -5,7 +5,7 @@ Add income and expenses, set monthly category budgets, visualise spending trends
 and export data to CSV — all from a dark-themed, responsive GUI that runs on
 Windows, macOS, and Linux with zero third-party dependencies.
 
-> **OSSD Final-Term Project** — Collaborative Tkinter GUI App with GitHub-Based Version Control
+> **OSSD Final-Term Project** — UMT Lahore | Collaborative Tkinter GUI App with GitHub-Based Version Control
 
 ---
 
